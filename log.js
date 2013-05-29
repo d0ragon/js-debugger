@@ -12,9 +12,8 @@ window.debug = {
       sc.push('arguments[' + i + ']');
     //sc += 'arguments[' + i + '], ';
     }
-    sc = sc.join(', ');
   //sc = sc.replace(/,\s$/, '');
-    eval('console.log(' + sc + ')');
+    eval('console.log(' + sc.join(', ') + ')');
   },
   on: function ()
   {
