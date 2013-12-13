@@ -10,9 +10,7 @@ window.debug = {
     for (var i = 0, num = Array.prototype.slice.call(arguments).length; i < num; i ++)
     {
       sc.push('arguments[' + i + ']');
-    //sc += 'arguments[' + i + '], ';
     }
-  //sc = sc.replace(/,\s$/, '');
     eval('console.log(' + sc.join(', ') + ')');
   },
   enable: function ()
