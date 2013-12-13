@@ -15,20 +15,12 @@ window.debug = {
   //sc = sc.replace(/,\s$/, '');
     eval('console.log(' + sc.join(', ') + ')');
   },
-  on: function ()
+  enable: function ()
   {
     this.enabled = true;
   },
-  off: function ()
-  {
-    this.enabled = false;
-  },
-  enable: function ()
-  {
-    return this.on();
-  },
   disable: function ()
   {
-    return this.off();
+    this.enabled = false;
   }
 };
